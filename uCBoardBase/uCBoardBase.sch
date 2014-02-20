@@ -1711,6 +1711,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;&lt;br&gt;
 &lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
+<package name="CREATIVE_COMMONS">
+<text x="-20.32" y="5.08" size="1.778" layer="27">Released under the Creative Commons Attribution Share-Alike 3.0 License</text>
+<text x="0" y="2.54" size="1.778" layer="27">http://creativecommons.org/licenses/by-sa/3.0</text>
+<text x="11.43" y="0" size="1.778" layer="27">Designed by:</text>
+</package>
 </packages>
 <symbols>
 <symbol name="3.3V">
@@ -1729,6 +1734,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="CREATIVE_COMMONS">
+<text x="0" y="5.08" size="1.778" layer="95">Released under the Creative Commons Attribution Share-Alike 3.0 License</text>
+<text x="0" y="2.54" size="1.778" layer="95">http://creativecommons.org/licenses/by-sa/3.0</text>
+<text x="0" y="0" size="1.778" layer="95">Design by:</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1764,6 +1774,19 @@ We've spent an enormous amount of time creating and checking these footprints an
 </gates>
 <devices>
 <device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CREATIVE_COMMONS" prefix="CC_TEXT">
+<description>Creative Commons License summary</description>
+<gates>
+<gate name="G$1" symbol="CREATIVE_COMMONS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CREATIVE_COMMONS">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -4178,6 +4201,8 @@ W = angled&lt;p&gt;
 <part name="LED4" library="SparkFun-LED" deviceset="LED" device="0603"/>
 <part name="R9" library="SparkFun-Passives" deviceset="RESISTOR" device="0603-RES" value="0"/>
 <part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="CC_TEXT1" library="SparkFun-Aesthetics" deviceset="CREATIVE_COMMONS" device=""/>
+<part name="CC_TEXT2" library="SparkFun-Aesthetics" deviceset="CREATIVE_COMMONS" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4186,6 +4211,7 @@ W = angled&lt;p&gt;
 Breakout Board</text>
 <text x="182.88" y="-114.3" size="2.1844" layer="94">0</text>
 <text x="182.88" y="-121.92" size="2.1844" layer="94">1 of 2</text>
+<text x="22.86" y="-119.38" size="1.778" layer="91">B. Carrizales</text>
 </plain>
 <instances>
 <instance part="U1" gate="A" x="20.32" y="43.18"/>
@@ -4227,6 +4253,7 @@ Breakout Board</text>
 <instance part="GND7" gate="1" x="5.08" y="-76.2"/>
 <instance part="GND8" gate="1" x="-30.48" y="-68.58"/>
 <instance part="J1" gate="G$1" x="-53.34" y="-53.34"/>
+<instance part="CC_TEXT1" gate="G$1" x="10.16" y="-119.38"/>
 </instances>
 <busses>
 </busses>
@@ -4555,6 +4582,7 @@ Breakout Board</text>
 <text x="127" y="-106.68" size="2.1844" layer="94">1 of 2</text>
 <text x="61.468" y="-105.41" size="2.54" layer="94">TM4C123BE6PM Microcontroller
 Breakout Board</text>
+<text x="-22.86" y="-104.14" size="1.778" layer="91">B. Carrizales</text>
 </plain>
 <instances>
 <instance part="U$2" gate="G$1" x="0" y="0"/>
@@ -4599,6 +4627,7 @@ Breakout Board</text>
 <instance part="LED4" gate="G$1" x="71.12" y="58.42"/>
 <instance part="R9" gate="G$1" x="78.74" y="48.26" rot="R180"/>
 <instance part="SUPPLY9" gate="G$1" x="71.12" y="76.2"/>
+<instance part="CC_TEXT2" gate="G$1" x="-35.56" y="-104.14"/>
 </instances>
 <busses>
 </busses>
